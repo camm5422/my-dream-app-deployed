@@ -1,0 +1,16 @@
+/* Littlecore look for mockups (set in milestone 00).
+   Colours, fonts and zone themes come from the real design tokens so mockups and the app stay in step.
+   Switch zone with <body data-track="kids|students|pros">. No data-track = brand default. */
+@import url("../../demo/src/styles/fonts.css");
+@import url("../../demo/src/styles/tokens.css");
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); line-height: 1.5; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 16px; }
+h1, h2, h3 { font-family: var(--font-head); line-height: 1.2; }
+a { color: var(--accent); }
+.badge { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 999px; background: var(--card); color: var(--muted); }
+.card { background: var(--card); border-radius: var(--radius); padding: 16px; }
+.btn { display: inline-block; min-height: var(--tap-min); padding: 10px 18px; border: 0; border-radius: var(--radius); background: var(--accent); color: var(--accent-text); font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
+.list { padding-left: 1.2rem; }
+.mock-note { border: 2px dashed var(--muted); border-radius: var(--radius); padding: 8px 12px; color: var(--muted); font-size: 0.85rem; }
